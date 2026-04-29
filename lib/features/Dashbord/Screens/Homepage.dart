@@ -50,7 +50,7 @@ class Homepage extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    "One Card. Many Health Benefits",
+                    "One Card. One Health Benefits",
                     textAlign: TextAlign.center,
                     style: AppTextStyle.paragraphLargeRegular.copyWith(
                       color: colors.mutedForeground,
