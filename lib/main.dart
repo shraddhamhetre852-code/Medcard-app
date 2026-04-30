@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:medcard_app/features/Dashbord/Screens/Homepage.dart';
+// import 'package:medcard_app/features/Dashbord/Screens/splash_screen.dart';
+import 'package:medcard_app/core/routing/app_routing.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Homepage());
+      initialRoute: AppRouter.splash,
+      onGenerateRoute: AppRouter.generateRoute,
+    );
   }
 }
