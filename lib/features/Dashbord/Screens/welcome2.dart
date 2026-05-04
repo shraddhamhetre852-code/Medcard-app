@@ -95,7 +95,7 @@ class Welcome2 extends StatelessWidget {
                     ),
                   child: Text(
                     "Next →",
-                  style: AppTextStyle.heading4.copyWith(
+                  style: AppTextStyle.paragraphSmallMedium.copyWith(
                     color:AppColors.lCard
                   ),
                   
