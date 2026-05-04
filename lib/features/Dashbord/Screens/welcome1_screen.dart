@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medcard_app/features/Dashbord/Screens/welcome3.dart';
 import 'package:medcard_app/theme/app_colors.dart';
 import 'package:medcard_app/theme/font-styles.dart';
 
@@ -90,7 +91,9 @@ class Welcome1Screen extends StatelessWidget {
                           width: double.infinity,
                           height: 50,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Welcome3(),
+                    ),
+                    );},
                             style: ElevatedButton.styleFrom(
                               backgroundColor:AppColors.lPrimary,
                               padding: EdgeInsets.symmetric(
