@@ -17,17 +17,16 @@ class Welcome1Screen extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
-                children:  [
+                children: [
                   Text(
                     "Skip",
                     style: AppTextStyle.paragraphSmallMedium.copyWith(
                       color: AppColors.lMutedForeground,
                     ),
                   ),
-                ]
-                ),
-              
-              
+                ],
+              ),
+
               Expanded(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -50,7 +49,6 @@ class Welcome1Screen extends StatelessWidget {
                       ),
                     ),
 
-              
                     Column(
                       children: [
                         RichText(
@@ -79,42 +77,40 @@ class Welcome1Screen extends StatelessWidget {
                         ),
                       ],
                     ),
+                    const Spacer(),
 
-                    Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [_dot(isActive: true), _dot(), _dot()],
-                        ),
-                        const SizedBox(height: 16),
-                        SizedBox(
-                          width: double.infinity,
-                          height: 50,
-                          child: ElevatedButton(
-                            onPressed: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => Welcome2(),
-                              ),
-                              );    
-                            },
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor:AppColors.lPrimary,
-                              padding: EdgeInsets.symmetric(
-                                horizontal: 24,
-                                vertical: 10,
-                              ),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                            ),
-                            child: Text(
-                              "Next",
-                              style: AppTextStyle.paragraphSmallMedium.copyWith(
-                                color: AppColors.lPrimaryForeground,
-                              ),
-                            ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [_dot(isActive: true), _dot(), _dot()],
+                    ),
+                    const SizedBox(height: 20),
+                    SizedBox(
+                      width: 342,
+                      height: 40,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Welcome2()),
+                          );
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppColors.lPrimary,
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 24,
+                            vertical: 10,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
                           ),
                         ),
-                      ],
+                        child: Text(
+                          " Next →",
+                          style: AppTextStyle.paragraphSmallMedium.copyWith(
+                            color: AppColors.lPrimaryForeground,
+                          ),
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -126,12 +122,11 @@ class Welcome1Screen extends StatelessWidget {
     );
   }
 
-
   Widget _dot({bool isActive = false}) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 4),
-      width: isActive ? 20 : 6,
-      height: 6,
+      width: isActive ? 20 : 8,
+      height: 8,
       decoration: BoxDecoration(
         color: isActive ? AppColors.lPrimary : AppColors.lSecondary,
         borderRadius: BorderRadius.circular(10),
