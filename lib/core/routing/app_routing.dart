@@ -14,6 +14,8 @@ class AppRouter {
 
       case welcome1:
         return MaterialPageRoute(builder: (_) => Welcome1Screen());
+        // case Welcome3:
+        // return MaterialPageRoute(builder: (_) => Welcome3());
 
         case Welcome2:
         return MaterialPageRoute(builder: (_) => Welcome2());
