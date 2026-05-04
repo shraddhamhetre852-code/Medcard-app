@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:medcard_app/features/Dashbord/Screens/splash_screen.dart';
 import 'package:medcard_app/features/Dashbord/Screens/welcome1_screen.dart';
 import 'package:medcard_app/features/Dashbord/Screens/welcome2.dart';
+import 'package:medcard_app/features/Dashbord/Screens/welcome3.dart';
 
 class AppRouter {
   static const String splash = '/';
@@ -14,11 +15,12 @@ class AppRouter {
 
       case welcome1:
         return MaterialPageRoute(builder: (_) => Welcome1Screen());
-        // case Welcome3:
-        // return MaterialPageRoute(builder: (_) => Welcome3());
 
         case Welcome2:
         return MaterialPageRoute(builder: (_) => Welcome2());
+
+        case Welcome3:
+        return MaterialPageRoute(builder: (_) => Welcome3());
 
       default:
         return MaterialPageRoute(

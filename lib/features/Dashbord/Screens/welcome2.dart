@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medcard_app/features/Dashbord/Screens/welcome3.dart';
 import 'package:medcard_app/theme/app_colors.dart';
 import 'package:medcard_app/theme/font-styles.dart';
 import 'package:medcard_app/theme/theme_ext.dart';
@@ -81,7 +82,7 @@ class Welcome2 extends StatelessWidget {
                 width: double.infinity,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context) => Welcome2(),
+                  onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context) => Welcome3(),
                               ),
                               );    
                             
