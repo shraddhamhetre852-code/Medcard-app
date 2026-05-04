@@ -47,7 +47,7 @@ class Welcome3 extends StatelessWidget {
 
               SizedBox(
                 width: double.infinity,
-                height: 48,
+                height: 40,
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => Welcome3(),
